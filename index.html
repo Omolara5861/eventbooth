@@ -68,8 +68,22 @@
 
         </ul>
       </nav>
-
-      <a href="#" class="btn btn-secondary">My Account</a>
+      
+      <li class="dropdown account">
+        <a href="#" class="btn btn-secondary">My Account</a>
+        <ul id="myDropdown" class="dropdown-content">
+          <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div>
+        </ul>
+      </li>
 
       <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
