@@ -301,8 +301,36 @@
   }
   
   .navbar-link:is(:hover, :focus) { color: var(--primary); }
+
+  .dropdown {
+      position: relative;
+  }
+  li ul {
+    background: var(--white);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    width: 200px;
+    left: 0;
+    display: none;
+  }
   
+ li:hover > ul,
+ li:focus-within > ul,
+ li ul:hover,
+ li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
   
+  li ul li {
+    clear: both;
+    width: 100%;
+  }
   
   
   
@@ -638,10 +666,7 @@
   
   .contact .btn ion-icon { --ionicon-stroke-width: 50px; }
   
-  
-  
-  
-  
+
   /*-----------------------------------*\
     #NEWSLETTER
   \*-----------------------------------*/
