@@ -915,7 +915,7 @@
    * responsive for larger than 640px screen
    */
   
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .navbar {
       height: unset !important;
     }
