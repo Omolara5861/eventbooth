@@ -30,7 +30,7 @@
   --light-gray: hsl(216, 12%, 84%);
   --carcoal_20: hsla(214, 19%, 29%, 0.2);
   --carcoal_15: hsla(214, 19%, 29%, 0.15);
-  --carcoal_10: hsla(214, 19%, 29%, 0.10);
+  --carcoal_10: hsla(214, 19%, 29%);
   --secondary: #5f1b26;
   --gainsboro: hsl(220, 13%, 91%);
   --white_70: hsla(0, 0%, 100%, 0.7);
@@ -164,7 +164,7 @@ html {
 body {
   background-color: var(--white);
   font-size: var(--fs-5);
-  color: var(--cadet-gray);
+  color: var(--carcoal_10);
 }
 
 
@@ -177,6 +177,7 @@ body {
 
 .container {
   padding-inline: 15px;
+  margin: auto;
 }
 
 .btn {
